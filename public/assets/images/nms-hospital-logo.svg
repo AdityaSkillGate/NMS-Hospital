@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 140" width="270" height="70">
+  <defs>
+    <!-- Cross Gradient (Blue to Green) -->
+    <linearGradient id="crossGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="45%" stop-color="#0ea5e9" />
+      <stop offset="60%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <!-- Deep Blue Gradient for NMS -->
+    <linearGradient id="blueTextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0369a1" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <!-- Emerald Green Gradient for HOSPITAL -->
+    <linearGradient id="greenTextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+
+    <!-- Soft Drop Shadow for Emblem -->
+    <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0284c7" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <!-- LOGO EMBLEM GROUP -->
+  <g transform="translate(10, 10)" filter="url(#subtleGlow)">
+    <!-- Base Medical Cross with rounded edges -->
+    <path d="M 45 5 
+             L 75 5 
+             A 6 6 0 0 1 81 11 
+             L 81 40 
+             L 110 40 
+             A 6 6 0 0 1 116 46 
+             L 116 74 
+             A 6 6 0 0 1 110 80 
+             L 81 80 
+             L 81 109 
+             A 6 6 0 0 1 75 115 
+             L 45 115 
+             A 6 6 0 0 1 39 109 
+             L 39 80 
+             L 10 80 
+             A 6 6 0 0 1 4 74 
+             L 4 46 
+             A 6 6 0 0 1 10 40 
+             L 39 40 
+             L 39 11 
+             A 6 6 0 0 1 45 5 Z" 
+          fill="url(#crossGrad)" />
+
+    <!-- Stylized Human Figure (Care & Healing silhouette) -->
+    <!-- Head Circle -->
+    <circle cx="58" cy="40" r="8" fill="#ffffff" />
+    <circle cx="58" cy="40" r="5.5" fill="#0369a1" />
+
+    <!-- Dynamic Caring Swoosh (Upper body & arms swooping upwards) -->
+    <path d="M 24 74 C 36 70, 52 54, 76 34 C 84 27, 94 20, 100 12 C 94 24, 82 38, 70 47 C 56 58, 44 68, 24 74 Z" 
+          fill="#ffffff" opacity="0.95" />
+
+    <!-- Secondary Accent Swoosh -->
+    <path d="M 32 78 C 45 74, 62 58, 86 38 C 96 30, 104 22, 108 16 C 102 26, 92 38, 78 48 C 62 60, 48 72, 32 78 Z" 
+          fill="#0c4a6e" opacity="0.4" />
+
+    <!-- ECG Heartbeat Vital Pulse Line across the bottom green arm -->
+    <path d="M 40 76 L 47 76 L 50 85 L 54 62 L 59 90 L 63 76 L 78 76" 
+          fill="none" 
+          stroke="#ffffff" 
+          stroke-width="3" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
+  </g>
+
+  <!-- LOGO TYPOGRAPHY GROUP -->
+  <!-- N M S in Majestic Trust Blue Serif -->
+  <text x="155" y="78" 
+        font-family="'Plus Jakarta Sans', 'Cinzel', 'Georgia', serif" 
+        font-size="64" 
+        font-weight="800" 
+        letter-spacing="9" 
+        fill="url(#blueTextGrad)">N M S</text>
+
+  <!-- H O S P I T A L in Crisp Emerald Green Spaced Serif -->
+  <text x="157" y="108" 
+        font-family="'Inter', 'Arial', sans-serif" 
+        font-size="20" 
+        font-weight="700" 
+        letter-spacing="14" 
+        fill="url(#greenTextGrad)">HOSPITAL</text>
+</svg>

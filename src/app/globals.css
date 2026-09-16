@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-heading: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    color: #0f172a;
+    background-color: #ffffff;
+    font-family: var(--font-inter), system-ui, sans-serif;
+  }
+}
+
+/* Custom clinical glassmorphism & gradients */
+.clinical-glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.clinical-glass-dark {
+  background: rgba(11, 19, 41, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(30, 58, 138, 0.25);
+}
+
+/* Animated heartbeat pulse wave effect */
+@keyframes ecgPulse {
+  0% { stroke-dashoffset: 600; }
+  100% { stroke-dashoffset: 0; }
+}
+
+.ecg-animate {
+  stroke-dasharray: 600;
+  animation: ecgPulse 3s linear infinite;
+}
+
+/* Soft glowing shadow tokens */
+.glow-primary {
+  box-shadow: 0 10px 30px -10px rgba(2, 132, 199, 0.35);
+}
+
+.glow-vital {
+  box-shadow: 0 10px 30px -10px rgba(16, 185, 129, 0.35);
+}
+
+/* Modern smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
